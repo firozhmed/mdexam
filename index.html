@@ -1,0 +1,725 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+
+
+
+	<link href="mdb/css/addons/flag.min.css" rel="stylesheet">
+	<!-- Link owl's CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+	<!-- Link owl's  JS -->
+	<script src="js/owl.carousel.js"></script>
+
+
+
+
+
+	<script>
+		$(document).ready(function () {
+			$('.slider').bxSlider(
+
+				{
+					mode: 'fade',
+					captions: true,
+					slideWidth: 1048,
+					slideheight: 262,
+					captions: true
+
+				});
+			var owl = $('.owl-carousel');
+			owl.owlCarousel({
+				items: 7,
+				loop: true, dots: false,
+				margin: 10,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				autoplayHoverPause: true
+			});
+
+
+
+		});
+	</script>
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+
+</head>
+
+<body>
+	<div class="row   container-fluid">
+
+
+		<div class="col-lg-4">
+			<img class="imglogo" src="img/salee.jpg" alt="Manual of cuts">
+			<span class="splogo">Manual of cuts</span>
+		</div>
+		<div class="row col-lg-8     container-fluid">
+			<div class="col-lg-3">
+				<input type="text" id="mdb-search-flag" class="form-control my-4   " placeholder="Search Flag">
+				<i class="united states flag"></i>
+				<div class="dropup">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+					</button>
+					<div class="dropdown-menu" aria-labelledby="triggerId">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item disabled" href="#">Disabled action</a>
+						<h6 class="dropdown-header">Section header</h6>
+						<a class="dropdown-item" href="#">Action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">After divider action</a>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="col-lg-4    container-fluid">
+				<!-- Button trigger modal log in -->
+				<button type="button" class="btn btn-praimery btn-lg  " data-toggle="modal" data-target="#modelId"
+					style="background-color: rgb(141, 138, 138); width: 100%;  margin-top: 21px; border-radius: 0px; ">
+					<pre style="color: white;"><i class="fas fa-user" ></i>    	Login</pre>
+				</button>
+			</div>
+			<div class="col-lg-2   container-fluid">
+				<!-- Button trigger modal sign up-->
+				<button type="button" class="btn btn-praimery btn-lg   " data-toggle="modal"
+					data-target="#modelIdsignup"
+					style="background-color: rgb(255, 255, 255); width: 100%;margin-top: 21px; color: red;  ">
+					<i class="fas fa-user-plus"></i> Sign Up
+				</button>
+			</div>
+
+			<div class="col-lg-3    container-fluid " style=" margin-top: 21px;">
+
+				<div class="   m-auto  divfree a "> <button class="btn  aa">The reduction is free of charge</button>
+				</div>
+
+			</div>
+
+
+			<!-- Modal log in-->
+			<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+				aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header border-bottom-0">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="form-title text-center">
+								<h4>Login</h4>
+							</div>
+							<div class="d-flex flex-column text-center">
+								<form>
+									<div class="form-group">
+										<input type="email" class="form-control" id="email1"
+											placeholder="Your email address...">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" id="password1"
+											placeholder="Your password...">
+									</div>
+									<button type="button" class="btn btn-info btn-block btn-round">Login</button>
+								</form>
+
+								<div class="text-center text-muted delimiter">or use a social network</div>
+								<div class="d-flex justify-content-center social-buttons">
+									<button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+										data-placement="top" title="Twitter">
+										<i class="fab fa-twitter"></i>
+									</button>
+									<button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+										data-placement="top" title="Facebook">
+										<i class="fab fa-facebook"></i>
+									</button>
+									<button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+										data-placement="top" title="Linkedin">
+										<i class="fab fa-linkedin"></i>
+									</button>
+									</di>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer d-flex justify-content-center">
+							<div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+			<!-- Modal siggn up -->
+			<div class="modal fade" id="modelIdsignup" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+				aria-hidden="true"   >
+				<div class="modal-dialog modal-dialog-centered" role="document"   >
+					<div class="modal-content"   >
+						<div class="modal-header border-bottom-0">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+
+						<div class="signup-form"  >
+							<form action="/examples/actions/confirmation.php" method="post">
+								<h2>Create an Account</h2>
+								<p class="hint-text">Sign up with your social media account or email address</p>
+								<div class="social-btn text-center">
+									<a href="#" class="btn btn-primary btn-lg"><i class="fab fa-facebook-f"></i>
+										Facebook</a>
+									<a href="#" class="btn btn-info btn-lg"><i class="fab fa-twitter"></i>
+										Twitter</a>
+									<a href="#" class="btn btn-danger btn-lg"><i class="fab fa-google"></i>
+										Google</a>
+								</div>
+								<div class="or-seperator"><b>or</b></div>
+								<div class="form-group">
+									<input type="text" class="form-control input-lg" name="username"
+										placeholder="Username" required="required">
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control input-lg" name="email"
+										placeholder="Email Address" required="required">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control input-lg" name="password"
+										placeholder="Password" required="required">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control input-lg" name="confirm_password"
+										placeholder="Confirm Password" required="required">
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn btn-success btn-lg btn-block signup-btn">Sign
+										Up</button>
+								</div>
+							</form>
+							<div class="text-center">Already have an account? <a href="#">Login here</a></div>
+						</div>
+
+
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+
+	</div>
+
+	</div>
+
+	</div>
+	<nav class="navbar navbar-expand-md  navbar-dark ">
+
+
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Navbar links -->
+		<div class=" justify-content-center collapse navbar-collapse   col-offcet" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+
+				<li class="nav-item    ">
+					<a class="nav-link k  fa fa-home" href="#"> Home</a>
+				</li>
+				<li class="nav-item  ">
+					<a class="nav-link k fa fa-th-list " href="#"> sections</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link k  fa fa-store" href="#"> Stors</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link k  fa fa-th-large  " href="#"> Special offers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link k   fa fa-info" href="#"> About</a>
+
+				</li>
+				<li class="nav-item">
+					<a class="nav-link  fa fa-envelope" href="#"> Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!--	
+<i class="fa fa-sign-in" aria-hidden="true"></i>	
+<div  class="main-slider  col-10    m-auto">
+   
+		<div class="container ">
+		   
+			<div class="your-class ">
+				<div  class=""><img  src="img/demo.jpg" alt=""></div>
+				<div><img class="responsive" src="img/demo1.jpg" alt=""></div>
+				<div><img class="responsive" src="img/demo3.jpg" alt=""></div>
+				<div><img class="responsive" src="img/demo4.jpg" alt=""></div>
+			  </div>
+		
+			  
+		</div>
+		
+	
+
+
+	</div>
+-->
+	<span class="bigdis">Big discounts</span>
+	<div class="container-fluid col-11    m-auto   ">
+		<div class="m">
+			<div class="slider ">
+
+				<div><img style="height: 262px; width: 1048px;" src="img/demo.jpg" alt=""></div>
+				<div><img style="height: 262px; width: 1048px;" src="img/demo1.jpg" alt=""></div>
+				<div><img style="height: 262px; width: 1048px;" src="img/demo3.jpg" alt=""></div>
+				<div><img style="height: 262px; width: 1048px;" src="img/demo4.jpg" alt=""></div>
+			</div>
+
+		</div>
+
+
+
+
+		<div class="owl-carousel owl-theme mb-4 ">
+			<div class="item"><img src="img/Perfumes.jpg" alt="Perfumes" class="heimg">
+				<h6 class="text-center">Perfumes</h6>
+			</div>
+			<div class="item"><img src="img/Beauty.jpg" alt="Beauty" class="heimg">
+				<h6 class="text-center">Beauty</h6>
+			</div>
+			<div class="item"><img src="img/Clothes.jpg" alt="Clothes" class="heimg">
+				<h6 class="text-center">Clothes</h6>
+			</div>
+			<div class="item"><img src="img/foodstuffs.jpg" alt="foodstuffs" class="heimg">
+				<h6 class="text-center">foodstuffs</h6>
+			</div>
+			<div class="item"><img src="img/Perfumes.jpg" alt="Perfumes" class="heimg">
+				<h6 class="text-center">Perfumes</h6>
+			</div>
+			<div class="item"><img src="img/Beauty.jpg" alt="Beauty" class="heimg">
+				<h6 class="text-center">Beauty</h6>
+			</div>
+			<div class="item"><img src="img/Clothes.jpg" alt="Clothes" class="heimg">
+				<h6 class="text-center">Clothes</h6>
+			</div>
+			<div class="item"><img src="img/foodstuffs.jpg" alt="foodstuffs" class="heimg">
+				<h6 class="text-center">foodstuffs</h6>
+			</div>
+			<div class="item"><img src="img/Perfumes.jpg" alt="Perfumes" class="heimg">
+				<h6 class="text-center">Perfumes</h6>
+			</div>
+			<div class="item"><img src="img/Beauty.jpg" alt="Beauty" class="heimg">
+				<h6 class="text-center">Beauty</h6>
+			</div>
+			<div class="item"><img src="img/Clothes.jpg" alt="Clothes" class="heimg">
+				<h6 class="text-center">Clothes</h6>
+			</div>
+			<div class="item"><img src="img/foodstuffs.jpg" alt="foodstuffs" class="heimg">
+				<h6 class="text-center">foodstuffs</h6>
+			</div>
+		</div>
+
+
+
+
+		<div class="row container-fluid   mb-3">
+			<div class="col-4   banner  ban"><img src="img/baer.jpg" alt="banner" class="bannerimg"><span
+					class="text-center">Banner discounts</span></div>
+			<div class="col-4   banner  ban"><img src="img/baer.jpg" alt="banner" class="bannerimg"><span>Banner
+					discounts</span></div>
+			<div class="col-4   banner"><img src="img/baer.jpg" alt="banner" class="bannerimg"><span>Banner
+					discounts</span></div>
+
+		</div>
+
+
+		<div class="row container-fluid mb-4 ">
+			<div class="modeldiv container-fluid  col-2"><img src="img/Perfumes.jpg" alt="Perfumes"
+					class="modelimg ml-0 pl-0 col-12">
+				<h6 class="text-center">Perfumes</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid  col-2"><img src="img/Beauty.jpg" alt="Beauty"
+					class="modelimg  col-12">
+				<h6 class="text-center">Beauty</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid   col-2"><img src="img/Clothes.jpg" alt="Clothes"
+					class="modelimg  col-12">
+				<h6 class="text-center">Clothes</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv   container-fluid col-2"><img src="img/foodstuffs.jpg" alt="foodstuffs"
+					class="modelimg col-12">
+				<h6 class="text-center">foodstuffs</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid col-2"><img src="img/Perfumes.jpg" alt="Perfumes"
+					class="modelimg  col-12">
+				<h6 class="text-center">Perfumes</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid col-2  divlast">
+				<h6 class="text-center imglast  aa">Advertising space</h6>
+			</div>
+
+		</div>
+
+
+		<div class="row container-fluid mb-4 ">
+			<div class="modeldiv container-fluid  col-2"><img src="img/Perfumes.jpg" alt="Perfumes"
+					class="modelimg ml-0 pl-0 col-12">
+				<h6 class="text-center">Perfumes</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid  col-2"><img src="img/Beauty.jpg" alt="Beauty"
+					class="modelimg  col-12">
+				<h6 class="text-center">Beauty</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid   col-2"><img src="img/Clothes.jpg" alt="Clothes"
+					class="modelimg  col-12">
+				<h6 class="text-center">Clothes</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv   container-fluid col-2"><img src="img/foodstuffs.jpg" alt="foodstuffs"
+					class="modelimg col-12">
+				<h6 class="text-center">foodstuffs</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid col-2"><img src="img/Perfumes.jpg" alt="Perfumes"
+					class="modelimg  col-12">
+				<h6 class="text-center">Perfumes</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid col-2  "><img src="img/foodstuffs.jpg" alt="foodstuffs"
+					class="modelimg mr-0 pr-0 col-12">
+				<h6 class="text-center">foodstuffs</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+
+		</div>
+
+
+		<div class="row container-fluid mb-4 bb">
+
+			<div class="modeldiv  container-fluid col-2  divlast"></div>
+			<div class="modeldiv  container-fluid col-2 ">
+				<div class="divlast1 ml-1"></div>
+			</div>
+			<div class="modeldiv  container-fluid col-2  ">
+				<div class="divlast2 ml-1"></div>
+			</div>
+			<div class="modeldiv  container-fluid col-2  ">
+				<div class="divlast3 ml-1"></div>
+			</div>
+			<div class="modeldiv  container-fluid col-2  ">
+				<div class="divlast4 ml-1"></div>
+			</div>
+			<div class="modeldiv  container-fluid col-2  ">
+				<div class="divlast5 ml-1"></div>
+			</div>
+
+
+
+		</div>
+
+
+		<div class="row container-fluid mb-4 ">
+			<div class="modeldiv container-fluid  col-2"><img src="img/Perfumes.jpg" alt="Perfumes"
+					class="modelimg ml-0 pl-0 col-12">
+				<h6 class="text-center">Perfumes</h6>
+				<div class="m-auto">
+					<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+					<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+					<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+				</div>
+			</div>
+			<div class="modeldiv  container-fluid  col-2"><img src="img/Beauty.jpg" alt="Beauty"
+					class="modelimg  col-12">
+				<h6 class="text-center">Beauty</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid   col-2"><img src="img/Clothes.jpg" alt="Clothes"
+					class="modelimg  col-12">
+				<h6 class="text-center">Clothes</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv   container-fluid col-2"><img src="img/foodstuffs.jpg" alt="foodstuffs"
+					class="modelimg col-12">
+				<h6 class="text-center">foodstuffs</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid col-2"><img src="img/Perfumes.jpg" alt="Perfumes"
+					class="modelimg  col-12">
+				<h6 class="text-center">Perfumes</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid col-2  divlast">
+				<h6 class="text-center imglast  aa">Advertising space</h6>
+			</div>
+
+		</div>
+
+
+		<div class="row container-fluid mb-4   ">
+			<div class="modeldiv container-fluid  col-2"><img src="img/Perfumes.jpg" alt="Perfumes"
+					class="modelimg ml-0 pl-0 col-12">
+				<h6 class="text-center">Perfumes</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid  col-2  "><img src="img/Beauty.jpg" alt="Beauty"
+					class="modelimg  col-12">
+				<h6 class="text-center">Beauty</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid   col-2"><img src="img/Clothes.jpg" alt="Clothes"
+					class="modelimg  col-12">
+				<h6 class="text-center">Clothes</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv   container-fluid col-2"><img src="img/foodstuffs.jpg" alt="foodstuffs"
+					class="modelimg col-12">
+				<h6 class="text-center">foodstuffs</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid col-2"><img src="img/Perfumes.jpg" alt="Perfumes"
+					class="modelimg  col-12">
+				<h6 class="text-center">Perfumes</h6>
+				<button class="btn btn-light m-0 p-0  col-6">vvv vvv vvv</button>
+				<button class="btn btn-dark m-0 p-0 col-2">bbbbbbbb</button>
+				<button class="btn btn-danger m-0 p-0 col-2">bbbbbb</button>
+			</div>
+			<div class="modeldiv  container-fluid col-2  divlast">
+				<h6 class="text-center imglast  aa">Advertising space</h6>
+			</div>
+
+		</div>
+
+
+
+		<div class="col-3   m-auto  divfree  "> <button class="btn  aa">The reduction is free of charge</button> </div>
+
+
+
+
+
+
+
+		<!-- Footer -->
+		<footer class="page-footer font-small blue-grey lighten-5">
+
+
+			<div class="container">
+
+				<!-- Grid row-->
+
+
+				<!-- Footer Links -->
+				<div class="container text-center text-md-left mt-5">
+
+					<!-- Grid row -->
+					<div class="row mt-3 dark-grey-text">
+
+
+
+
+						<!-- Grid column -->
+						<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+							<!-- Links -->
+							<h6 class="text-uppercase font-weight-bold">The Sales Guide</h6>
+							<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+							<p>
+								<a class="dark-grey-text" href="#!">Home</a>
+							</p>
+							<p>
+								<a class="dark-grey-text" href="#!">sections</a>
+							</p>
+							<p>
+								<a class="dark-grey-text" href="#!">Stors</a>
+							</p>
+							<p>
+								<a class="dark-grey-text" href="#!">Special offers</a>
+							</p>
+
+						</div>
+						<!-- Grid column -->
+
+						<!-- Grid column -->
+						<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+							<!-- Links -->
+							<h6 class="text-uppercase font-weight-bold">About Guide</h6>
+							<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+							<p>
+								<a class="dark-grey-text" href="#!">Who Us?</a>
+							</p>
+							<p>
+								<a class="dark-grey-text" href="#!">What is the directory of discounts?</a>
+							</p>
+							<p>
+								<a class="dark-grey-text" href="#!">payment methods</a>
+							</p>
+							<p>
+								<a class="dark-grey-text" href="#!"></a>
+							</p>
+
+						</div>
+						<!-- Grid column -->
+
+
+						<!-- Grid column -->
+						<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+							<!-- Links -->
+							<h6 class="text-uppercase font-weight-bold">Help</h6>
+							<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+							<p>
+								<a class="dark-grey-text" href="#!">Call us</a>
+							</p>
+							<p>
+								<a class="dark-grey-text" href="#!"></a>
+							</p>
+							<p>
+								<a class="dark-grey-text" href="#!"></a>
+							</p>
+							<p>
+								<a class="dark-grey-text" href="#!"></a>
+							</p>
+
+						</div>
+
+
+
+						<!-- Grid column -->
+						<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+							<!-- Links -->
+							<h6 class="text-uppercase font-weight-bold">Contact</h6>
+							<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+							<p>
+
+								<i class="fas fa-facebook" aria-hidden="true"></i>
+							<p>
+								<i class="fas fa-envelope mr-3"></i>
+							</p>
+							<p>
+								<i class="fas fa-phone mr-3"></i>
+							</p>
+							<p>
+								<i class="fas fa-print mr-3"></i>
+							</p>
+
+						</div>
+						<!-- Grid column -->
+
+					</div>
+					<!-- Grid row -->
+
+				</div>
+				<!-- Footer Links -->
+
+				<!-- Copyright -->
+				<div class=" text-center text-black-50 py-3">
+
+				</div>
+				<!-- Copyright -->
+
+		</footer>
+
+
+
+
+
+
+	</div>
+	<div><img src="img/pagefooter1.jpg" width="100%" alt=""></div>
+</body>
+
+</html>
